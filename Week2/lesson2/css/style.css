@@ -1,0 +1,70 @@
+.text{
+    font-size: 15px;
+    transition-property: font-size;
+    transition-duration: 2s;
+    /* transition-delay: 2s; */
+    transition-timing-function: linear;
+    /* transition-timing-function: ease-out; */
+
+}
+
+.text:hover{
+    font-size: 50px;
+    color: cadetblue;
+}
+/* .square{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    transition: 2s;
+}
+
+.square:hover{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    transform: rotate(90deg);
+} */
+
+.square{
+    width: 100px;
+    height: 100px;
+    background: url(https://i04.appmifile.com/270_bbs_en/08/06/2021/27ce8c3eb0.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* animation-name: roll;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+    animation: roll 5s ease-in-out 1s  infinite alternate;
+}
+
+/* @keyframes roll {
+    from{
+        margin-left: 0%;
+    }
+    to{
+        margin-left: 90%;
+        transform: rotate(0.8turn);
+    }
+} */
+
+@keyframes roll {
+    0%{
+        margin-left: 0%;
+    }
+    25%{
+        transform: rotate(-0.9turn);
+        background-color: chocolate;
+    }
+    50%{
+        transform: rotate(0.9turn);
+    }
+    75%{
+        transform: rotate(-0.9turn);
+    }
+    100%{
+        margin-left: 90%;
+    }
+}

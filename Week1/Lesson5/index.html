@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+ 
+<!-- !Блок -->
+<!-- Название блока характеризует смысл("что это" - "меню":
+    menu, "кнопка": Button), ане состояние ("какой, как выглядит?") -->
+
+    <!-- верно -->
+    <div class="warning">
+    </div>
+
+    <!-- неверно -->
+    <div class="vellow_warning"></div>
+
+    <!-- Блок 'header' -->
+    <header class="header">
+        <!-- Вложеный блок 'logo'-->
+        <div class="logo"></div>
+
+        <!-- Вложенный блок 'search-from' -->
+        <form class="search-from"></form>
+    </header>
+
+
+    <!-- ! элемент -->
+
+    <!-- Название элемент характеризует смысл("что это" - "меню":
+    menu, "кнопка": Button), ане состояние ("какой, как выглядит?") --> 
+
+    <!-- Структура полного имени элемента соответсвует схеме: имя-блока__имя элемента. Имя элемента отделяется от имени блока двумя подчеркиваниями (__)-->
+
+    <form class="search-from">
+        <input type="text" class="search-form__input">
+        <button class="search-form__button"></button>
+    </form>
+
+    <!-- Элемент всегда часть блока, а не другого элемента.Это означает, что в названии элементов нельза прописывать иерархию вида Block__elem1__elem2 -->
+
+    <Form class="search-from">
+        <div class="search-form__content">
+            <!-- либо так -->
+            <input type="text" class="search-form__content">
+            <!-- либо так -->
+            <input type="text" class="search-form__content-input">
+
+        </div>
+    </Form>
+
+    <!-- Элемент - всегда часть блока и не должен исползоваться без него -->
+    <!-- неверно -->
+    <form class="search-from">
+        <input type="text" class="search-form__input">
+
+        <!-- Элемент это не обезательный компонент блока. не у всех блоков должны быть элементы -->
+        <!-- блок "search-form" -->
+        <div class="search-from">
+            <!-- блок 'input' -->
+            <input type="text" class="input">
+            <!-- блок 'Button' -->
+            <button class="button"></button>
+
+        </div>
+
+
+        <!-- ! модификатор -->
+        <!-- Название модификатора характеризует вней вид("какойразмер?","какая тема?" и тд - "размер": size_s, "тема":
+            theme-dark), состояние ("чем отличаеться от прочих" - "отключен" - disabled, "фокусированный": focused) -->
+            <!-- Имямодификатора отделяется от имени блока или элемента оним подчеркиванием (_).-->
+            <!-- Булевый -->
+        <div class="make-order">
+            <button class="make-order__button
+            make-order__button_disabled"></button>
+        </div>
+
+        <!-- Ключ значение -->
+        <div class="make-order">
+            <button class="make-order__button
+            make-order__button_color_red"></button>
+        </div>
+
+
+        <div class="description">
+            <p class="description__paragraph description__paragraph__fsz_24"></p>
+        </div>
+
+
+        <!-- невозможно одновременно исползовать два одинаковых модификатора с разными значениями-->
+
+        <div class="description">
+            <p class="description__paragraph
+            description__paragraph__fsz_24 
+            description__paragraph__fsz_36"></p>
+        </div>
+
+        
+
+
+
+
+
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.nav-bar{
+    background: black;
+
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.nav-list{
+    display: flex;
+}
+
+.nav-item{
+list-style-type: none;
+margin-left: 20px;
+}
+
+.nav-item a{
+color: wheat;
+text-decoration: none;
+
+
+}
+.nav-item input{
+    background: #ffe600;
+    border: none;
+    border-radius: 256px;
+    padding: 5px 0 3px 5px;
+}

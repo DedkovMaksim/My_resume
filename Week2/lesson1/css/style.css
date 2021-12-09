@@ -1,0 +1,107 @@
+/* Фиксированнаяверстка */
+
+/* .block{
+    background-color: black;
+    width: 500px;
+    height: 200px;
+} */
+
+/* Резиновая верстка */
+/* .one{ */
+    /* width: 50%;
+    background-color: blanchedalmond;
+}
+
+.two{
+    width: 30%;
+    background-color: chartreuse; */
+/* } */
+
+/* Адаптивная верстка */
+
+/* Синтаксис media зпросов 
+@media тип_ медиа (контрольная точка в пикселях){
+    изменение свойств css дляадаптации веб-страницы
+}
+В качестве типамедиа используется такие значения:
+
+all - значение по умолчанию,длявсех дивайсов
+
+print - используеться для принтеров(например если мы хотим построить страницу пол распечатку)
+
+screen - используется для экранов компьютеров, планшетов, смартфонов.
+
+speech - для технологий считывания сэкрана.
+
+Ключевые слова not, only, and
+до указания типа медиа, можно использовать ключевые слова not, only, and: 
+- not:  ключевое слово инвертирует смысл всего-запроса
+- only: единственное ключевое слово запрещает старымверсиям браузера, которые не подерживают медиа запросы применять указанные стили. это не влияет на современные браузеры.
+- and: может объединять свойство медиа-запроса с другими свойствами или с другими типами медиа
+
+@media (min-width: 320px) and (max-width: 760px){
+
+}
+
+эти ключевые слова необязательны.
+*/
+
+
+body{
+    font-family: Arial;
+    padding: 20px;
+    background: #f1f1f1;
+}
+
+.header{
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: wheat;
+}
+
+.left-column{
+    float: left;
+    width: 800px;
+    /* width: 75%; */
+}
+
+.right-column{
+    float: left;
+    width: 400px;
+    /* width: 25%; */
+    padding-left: 20px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+}
+
+.card{
+    background-color: wheat;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.row:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.footer{
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+
+}
+/* адапти */
+@media all and (max-width: 800px){
+    .left-column, .right-column{
+        width: 100%;
+        padding: 0;
+    }
+}
